@@ -1,0 +1,26 @@
+{
+  "name": "react-api-study",
+  "version": "1.0.0",
+  "description": "ReactJS, NodeJS, React Native base on OmniStack course by Rocketseat.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayro2222/react-api-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kayro2222/react-api-study/issues"
+  },
+  "homepage": "https://github.com/kayro2222/react-api-study#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.7",
+    "nodemon": "^1.19.4"
+  }
+}
