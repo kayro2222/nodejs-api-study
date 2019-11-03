@@ -2,6 +2,14 @@ const User = require('../models/User');
 const Spot = require('../models/Spot');
 
 module.exports = {
+    async index(requisition, response){
+        const { technology } = requisition.query;
+
+        const spots = await Spot.find({ technologies: technology });
+
+        return response.json(spots);
+    },
+
     async store(requisition, response){
         const { filename } = requisition.file;
         const { company, price, technologies } = requisition.body;
